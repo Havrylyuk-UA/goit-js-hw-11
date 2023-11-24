@@ -5,8 +5,8 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import "izitoast/dist/css/iziToast.min.css";
+@import "simplelightbox/dist/simple-lightbox.min.css";
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +22,64 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+form {
+  margin: 0 auto;
+}
+
+input {
+  width: 272px;
+height: 40px;
+flex-shrink: 0;
+
+border-radius: 4px;
+border: 1px solid #808080;
+
+color: #808080;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.64px;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+input[type="text"]:focus,
+input[type="text"]:not(:placeholder-shown) {
+  border: 1px solid #4E75FF;
+}
+
+button {
+  display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-radius: 8px;
+background: #4E75FF;
+border: none;
+
+color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: 0.64px;
+}
+
+.error-con {
+  color: #2E2F42;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.64px;
 }
