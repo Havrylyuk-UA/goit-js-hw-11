@@ -30,7 +30,7 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 
   display: flex;
   justify-content: start;
@@ -110,4 +110,28 @@ button:hover {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
+}
+
+.icon-false {
+  background-image: url('../public/bi_x-octagon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-con {
+}
+
+.gallery {
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.api-img {
+  width: 360px;
+  height: 200px;
 }
