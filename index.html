@@ -13,16 +13,19 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers2.js"></script>
-    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-d7fe61f2.js">
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-c397a7c5.css">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-dac47bfa.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-2bfd3a8a.css">
   </head>
   <body>
     <div class="container">
   <form class="form">
-    <input type="text" name="search" placeholder="Search images..." />
+    <input type="text" name="search" placeholder="Search images..." autocomplete="off" />
     <button type="submit">Search</button>
   </form>
-  <div class="error-con">Loading images, please wait...</div>
+  <!-- <div class="error-con">Loading images, please wait...</div> -->
+  <div class="gallery-con">
+    <ul class="gallery"></ul>
+  </div>
 </div>
 
 
