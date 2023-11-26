@@ -27,13 +27,15 @@ const falseToast = {
   close: false,
 };
 
+const url = 'https://pixabay.com/api/?key=';
+
 form.addEventListener('submit', e => {
   e.preventDefault();
 
   loader.style.display = 'inline-block';
 
   fetch(
-    `https://pixabay.com/api/?key=${API_KEY}&q=${searchWord}&image_type=photo&orientation=horizontal&safesearch=true`
+    `${url}${API_KEY}&q=${searchWord}&image_type=photo&orientation=horizontal&safesearch=true&per_page=18`
   )
     .then(response => {
       if (!response.ok) {
