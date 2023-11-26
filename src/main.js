@@ -46,6 +46,7 @@ form.addEventListener('submit', e => {
     .then(data => {
       gallery.textContent = '';
       if (data.hits.length === 0) {
+        loader.style.display = 'none';
         return iziToast.show(falseToast);
       }
       const dataList = data.hits.map(photo => {
