@@ -32,6 +32,10 @@ const url = 'https://pixabay.com/api/?key=';
 form.addEventListener('submit', e => {
   e.preventDefault();
 
+
+if(gallery) {
+    gallery.parentNode.removeChild(gallery);
+}
   loader.style.display = 'inline-block';
 
   fetch(
