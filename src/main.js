@@ -33,9 +33,8 @@ form.addEventListener('submit', e => {
   e.preventDefault();
 
 
-if(gallery) {
-    gallery.parentNode.removeChild(gallery);
-}
+  gallery.innerHTML = '';
+
   loader.style.display = 'inline-block';
 
   fetch(
